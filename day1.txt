@@ -1,0 +1,43 @@
+Concept
+List comprehensions
+List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
+
+Example:
+
+Based on a list of fruits, you want a new list, containing only the fruits with the letter "a" in the name.
+
+Without list comprehension you will have to write a for statement with a conditional test inside:
+
+The Syntax
+newlist = [expression for item in iterable if condition == True]
+
+1. Generate a list of values from 0 to given value: for x in range(value) -- generates a list containing values from 0 to value-1
+
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+coord=[]
+coord_new=[]
+for i in range(x+1):
+    for j in range(y+1):
+        for k in range(z+1):
+            coord.append([i,j,k])
+#print(coord)
+for m in coord:
+    #print(m[0]+m[1]+m[2])
+    #print("Value",n)
+    if (m[0]+m[1]+m[2]) != n:
+        coord_new.append(m)
+print(coord_new)
+
+Key learning:
+1. How to use the if not equal
+2. Access elements in a list within a list
+3. Generate a nested list of elements
+4. Cannot print the list direct print(list_name) returns error ..correctway is print element by element as done below
+Using print() with * operator
+We can use print(*list_name) when we want a simple and clean display of list elements without additional formatting like brackets or commas. The * operator unpacks the list so that each element is printed individually.
+
+

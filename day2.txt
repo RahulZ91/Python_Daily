@@ -1,0 +1,35 @@
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+sum=0
+for i in student_marks[query_name]:
+    sum+=i
+#print(float(sum/3.0))
+print("{:.2f}".format(round(sum/3, 2)))
+
+Learning:
+1. How to print the precision - similar to float in C - print("{:.2f}".format(round(variable, precision ie. digits after decimal needed)))
+2. use of + to concatenate in the string
+
+def print_full_name(first, last):
+    # Write your code here
+    print("Hello",first,last+"!","You just delved into python.")
+
+String
+def split_and_join(line):
+    # write your code here
+    line=line.split(" ")
+    line="-".join(line)
+    return line
+The line.split returns each different word in the string and converts this to a list
+"*".join(line) -- returns the string with the space between words replaced by a special character. In this case it is *
+
+
+
+
+

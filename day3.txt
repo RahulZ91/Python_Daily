@@ -1,0 +1,22 @@
+The capitalize() method in Python is used to change the first letter of a string to uppercase and make all other letters lowercase. It is especially useful when we want to ensure that text follows title-like capitalization, where only the first letter is capitalized.
+eg: s = "hello WORLD"
+res = s.capitalize()
+print(res)
+
+Python String split() method splits a string into a list of strings after breaking the given string by the specified separator.
+eg: string = "one,two,three"
+words = string.split(',')
+print(words)
+
+
+Capitalise each first letter in the string
+1. split the string to a list
+2. capitalise each element of the list
+3. join the list to a string
+4. print
+
+# Complete the solve function below.
+def solve(s):
+    x=s.split()
+    res = ' '.join([str(s).capitalize() for s in x])
+    return res 

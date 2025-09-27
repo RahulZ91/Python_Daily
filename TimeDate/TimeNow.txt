@@ -1,0 +1,5 @@
+import datetime
+print("Enter your name")
+name=input()
+
+print("Hello "+name+" , the time now is "+str(datetime.datetime.now()))

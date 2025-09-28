@@ -1,1 +1,13 @@
 Simple parser to input a mathematical expression and create tokens
+
+import re
+
+def simple_parser(expression):
+    # Tokenize: split numbers and operators
+    tokens = re.findall(r'\d+|[+\-*/]', expression)
+    
+    # For now, just return the tokens
+    return tokens
+
+expr = "2 + 3 * 4"
+print(simple_parser(expr))
